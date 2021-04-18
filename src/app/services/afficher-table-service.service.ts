@@ -17,7 +17,7 @@ export class AfficherTableServiceService {
   
 
   doconsulterID(enitity: any): Observable<any> {
-    return this.http.get(API_URL + 'doconsulterID?user='+enitity.username+'&password='+enitity.password+'&nom_table='+enitity.db);
+    return this.http.get(API_URL + 'doconsulterID?user='+enitity.username+'&password='+enitity.password+'&table='+enitity.db);
   }
   consulterTableOracle(enitity: any): Observable<any> {
     return this.http.get(API_URL + 'afficherTableOracle?user='+enitity.username+'&password='+enitity.password+'&nom_table='+enitity.db);
