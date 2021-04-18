@@ -1,48 +1,29 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" [routerLink]="['/profile']" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/user-list']" class="btn btn-link">User List</a>
-       
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/afficherTable']" class="btn btn-link">Display Tables</a>
-       
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/displayTableOracle']" class="btn btn-link">display Table Oracle</a>
-       
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/contraint']" class="btn btn-link">Contraint</a>
-       
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/do-consult']" class="btn btn-link">do-consult</a>
-       
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/consult-table']" class="btn btn-link">consult-table</a>
-       
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/oracle-table']" class="btn btn-link">oracle-table</a>
-       
-      </li>
-      
-    
+<ul id="nav">
+  <li class="current"><a [routerLink]="['/profile']" >Accueil</a></li><!-- n1 -->
+  <li><a href="#">Gérer les bases</a><!-- n1 -->
+    <ul>
+      <li><a [routerLink]="['/profile']" >Ajouter et convertir base de donée MYSQL</a></li><!-- n2 -->
+      <li><a [routerLink]="['/profile']" >Ajouter et convertir base de donée XML</a></li><!-- n2 -->
     </ul>
-    <!-- <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
-  </div>
-</nav>
+  </li>
+  <li><a href="#">Service d'optimisation</a>
+    <ul>
+      <li><a [routerLink]="['/consult-table']" >Consulter liste des tables ORACLE</a></li><!-- n2 -->
+      <li><a [routerLink]="['/afficherTable']" >Consulter les colonnes de la table</a></li><!-- n2 -->
+      <li><a [routerLink]="['/do-consult']" >Consulter l'ID de la table</a></li><!-- n2 -->
+    </ul>	
+  </li>	
+  <li><a href="#">Exporter vers ORACLE</a>
+  <ul>
+      <li><a [routerLink]="['/profile']" >Exporter vers ORACLE</a></li><!-- n2 -->	
+    </ul>
+  </li>
+  <li><a href="#">Moteur de régle</a>
+  <ul>
+      <li><a [routerLink]="['/profile']" >Joindre deux tables</a></li><!-- n2 -->	
+      <li><a [routerLink]="['/contraint']" >Consulter contrainte</a></li><!-- n2 -->	
+    </ul>
+  </li>
+  <!-- <li><a href="#">Contact</a></li> -->
+  </ul>
+  <br /><br /><br /><br /><br /><br />
