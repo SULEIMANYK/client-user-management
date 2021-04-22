@@ -33,6 +33,19 @@ export class AfficherTableServiceService {
     return this.http.get(API_URL + 'ajouterConnexion?user='+enitity.nom_base+'&password='+enitity.password+'&nom_table='+enitity.db);
 
   }
+  upload(enitity: any): Observable<any> {
+    return this.http.post(API_URL + '/processFileUpload',enitity.file);
+  }
+  ConvertMysqlCSV(enitity: any): Observable<any> {
+
+     return this.http.get(API_URL + 'db2CSVMethode?user='+enitity.nom_base+'&password='+enitity.password+'&nom_table='+enitity.db);
+ 
+   }
+   ConvertXMLCSV(): Observable<any> {
+    //http://localhost:8080/convertionXmlExcel
+    return this.http.get(API_URL + 'convertionXmlExcel');
+
+  }
   getdata(enitity: any): Observable<any> {
     return this.http.get(API_URL + 'afficherTable?user='+enitity.username+'&password='+enitity.password+'&nom_table='+enitity.db);
   }

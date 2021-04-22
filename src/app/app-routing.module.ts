@@ -14,6 +14,7 @@ import { DoConsultComponent } from './components/do-consult/do-consult.component
 import { DoConsultOracleTableComponent } from './components/do-consult-oracle-table/do-consult-oracle-table.component';
 import { DisplayOracleTableComponent } from './components/display-oracle-table/display-oracle-table.component';
 import { AddConvertMysqlComponent } from './components/add-convert-mysql/add-convert-mysql.component';
+import { ConvertMysqlCsvComponent } from './components/convert-mysql-csv/convert-mysql-csv.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
 
   {path:'AddConvertMysqlComponent', component:AddConvertMysqlComponent},
   
+  {path:'ConvertMysqlCsvComponent', component:ConvertMysqlCsvComponent},
    {path:'oracle-table', component:OracleTableComponent},
    {path:'consult-table', component:DoConsultOracleTableComponent},
    {path:'do-consult', component:DoConsultComponent},

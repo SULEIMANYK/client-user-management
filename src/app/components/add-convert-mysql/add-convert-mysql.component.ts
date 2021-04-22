@@ -64,7 +64,14 @@ export class AddConvertMysqlComponent {
   }
 
 
-
+  convert(form){
+    this.afficherTableServiceService.ConvertMysqlCSV(form.value).subscribe(data => {
+      this.tableData  = data;
+      // this.router.navigate(['/profile']);
+    }, err => {
+      this.errorMessage = 'Username or password is incorrect';
+    });
+  }
 
   affichertable(form :any) {
     this.afficherTableServiceService.addConvertMysql(form.value).subscribe(data => {
