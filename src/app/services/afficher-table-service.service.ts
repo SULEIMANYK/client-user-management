@@ -28,6 +28,11 @@ export class AfficherTableServiceService {
   getContraint(enitity: any): Observable<any> {
     return this.http.get(API_URL + 'afficherContrainte?user='+enitity.username+'&password='+enitity.password+'&nom_table='+enitity.db);
   }
+  addConvertMysql(enitity: any): Observable<any> {
+   // http://localhost:8080/ajouterConnexion?nom_base=meher&amp;login=crok&amp;mot_de_passe=root
+    return this.http.get(API_URL + 'ajouterConnexion?user='+enitity.nom_base+'&password='+enitity.password+'&nom_table='+enitity.db);
+
+  }
   getdata(enitity: any): Observable<any> {
     return this.http.get(API_URL + 'afficherTable?user='+enitity.username+'&password='+enitity.password+'&nom_table='+enitity.db);
   }

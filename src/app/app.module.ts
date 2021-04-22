@@ -31,6 +31,8 @@ import { OracleTableComponent } from './components/oracle-table/oracle-table.com
 import { DoConsultComponent } from './components/do-consult/do-consult.component';
 import { DoConsultOracleTableComponent } from './components/do-consult-oracle-table/do-consult-oracle-table.component';
 import { DisplayOracleTableComponent } from './components/display-oracle-table/display-oracle-table.component';
+import { AddConvertMysqlComponent } from './components/add-convert-mysql/add-convert-mysql.component';
+import { ConvertMysqlCsvComponent } from './components/convert-mysql-csv/convert-mysql-csv.component';
 
 
 @NgModule({
@@ -49,7 +51,9 @@ import { DisplayOracleTableComponent } from './components/display-oracle-table/d
     OracleTableComponent,
     DoConsultComponent,
     DoConsultOracleTableComponent,
-    DisplayOracleTableComponent
+    DisplayOracleTableComponent,
+    AddConvertMysqlComponent,
+    ConvertMysqlCsvComponent
   ],
   imports: [
     FormsModule,

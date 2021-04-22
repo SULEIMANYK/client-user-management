@@ -13,11 +13,15 @@ import { OracleTableComponent } from './components/oracle-table/oracle-table.com
 import { DoConsultComponent } from './components/do-consult/do-consult.component';
 import { DoConsultOracleTableComponent } from './components/do-consult-oracle-table/do-consult-oracle-table.component';
 import { DisplayOracleTableComponent } from './components/display-oracle-table/display-oracle-table.component';
+import { AddConvertMysqlComponent } from './components/add-convert-mysql/add-convert-mysql.component';
 
 
 const routes: Routes = [
   {path:'', redirectTo:'login', pathMatch:'full'},
   {path:'login', component:LoginComponent},
+
+  {path:'AddConvertMysqlComponent', component:AddConvertMysqlComponent},
+  
    {path:'oracle-table', component:OracleTableComponent},
    {path:'consult-table', component:DoConsultOracleTableComponent},
    {path:'do-consult', component:DoConsultComponent},
