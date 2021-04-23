@@ -13,9 +13,9 @@
         <div *ngIf="f.submitted && !adress.valid" class="help-block">An valid adress is required.</div>
       </div> -->
       <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !f.valid }">
-        <label for="user">User</label>
-        <input type="text" class="form-control input-text-custom" id="user" name="username" [(ngModel)]="user.user" #username="ngModel" required />
-        <div *ngIf="f.submitted && !username.valid" class="help-block">An valid username is required.</div>
+        <label for="user">Nom BD</label>
+        <input type="text" class="form-control input-text-custom" id="user" name="nomdb" [(ngModel)]="user.user" #username="ngModel" required />
+        <div *ngIf="f.submitted && !username.valid" class="help-block">An valid user is required.</div>
       </div>
       <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !f.valid }">
         <label for="password">Password</label>

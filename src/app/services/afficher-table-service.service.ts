@@ -30,11 +30,11 @@ export class AfficherTableServiceService {
   }
   addConvertMysql(enitity: any): Observable<any> {
    // http://localhost:8080/ajouterConnexion?nom_base=meher&amp;login=crok&amp;mot_de_passe=root
-    return this.http.get(API_URL + 'ajouterConnexion?user='+enitity.nom_base+'&password='+enitity.password+'&nom_table='+enitity.db);
+    return this.http.get(API_URL + 'ajouterConnexion?nom_base='+enitity.nom_base+'&login='+enitity.password+'&mot_de_passe='+enitity.db);
 
   }
   upload(enitity: any): Observable<any> {
-    return this.http.post(API_URL + '/processFileUpload',enitity.file);
+    return this.http.get(API_URL + '/processFileUpload',enitity.file);
   }
   ConvertMysqlCSV(enitity: any): Observable<any> {
 
